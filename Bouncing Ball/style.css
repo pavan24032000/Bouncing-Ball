@@ -1,0 +1,38 @@
+.box {
+    position: relative;
+    background-color: black;
+    width: 1270px;
+    height: 480px;
+    margin: 20px 40px;
+}
+
+.ball {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: red;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    animation: X-direction 2.2s linear infinite alternate, Y-direction 1s ease-out infinite alternate;
+}
+
+@keyframes X-direction {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 1160px;
+    }
+}
+
+@keyframes Y-direction {
+    from {
+        bottom: 0px;
+    }
+
+    to {
+        bottom: 370px;
+    }
+}
